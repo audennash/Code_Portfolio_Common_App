@@ -1,8 +1,6 @@
-#Top
-
 Welcome to my maker portfolio!  
 
-#My Projects 
+# My Projects 
 
 I am including four programming projects:
 1. JRPS Project (junior year and senior summer)
