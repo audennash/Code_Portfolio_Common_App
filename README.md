@@ -1,7 +1,7 @@
 Welcome to my maker portfolio!
-[My Projects]
+#My Projects
 I am including four programming projects:
-- [] JRPS Project (junior year and senior summer)
-- [] MAPS_Tree (late 10th grade)
-- [] Digit_Recognizer (early 10th grade)
-- [] Car Racing Game (late 8th grade)
+1. JRPS Project (junior year and senior summer)
+2. MAPS_Tree (late 10th grade)
+3. Digit_Recognizer (early 10th grade)
+4. Car Racing Game (late 8th grade)
