@@ -3,6 +3,7 @@ CPU v1 and v2 use the instruction set given in ISA.csv. They use 32-bit operands
 
 # CPU Interface
 CPU v1 and v2 have subtly different interfaces due to the dynamic scheduling capabilities of the latter.
+
 **Inputs shared by CPU v1 and CPU v2:**
 - **cpu_run:** when asserted, tells the CPU to attempt to execute instructions and increase its program counter
 - **cpu_reset:** when asserted, tells the CPU to flush all its registers and revert back to its default state
