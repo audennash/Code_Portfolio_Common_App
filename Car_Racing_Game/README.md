@@ -1,3 +1,5 @@
+#Car Racing Game
+
 This is a fun little "game" I made in 8th grade, with shapes2, a 2D drawing library that my teacher gave me. 
 
 The game does all the trigonometry and 3D calculations itself, and updates the GUI using 2D methods from `shapes2.py`. (This project was instrumental in helping me learn trigonometry.)
