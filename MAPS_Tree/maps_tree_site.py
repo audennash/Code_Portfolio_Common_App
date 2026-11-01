@@ -2,7 +2,7 @@ from flask import Flask, request, redirect, make_response
 
 app=Flask(__name__)
 hoster="127.0.0.1:8192"
-password="mentor!"
+password="password"
 
 @app.before_request
 def password_check():
