@@ -34,5 +34,5 @@ ISA.csv gives one row to each operation, with every column corresponding to a pa
 - If parameter 4 is denoted "Signed?", when asserted, the associated functional unit will perform a signed operation using 32-bit two's complement
 - If parameter 4 is denoted "Arithmetic?", when asserted, an arithmetic (instead of logical) right shift will occur, wherein previously unoccupied bits will be filled with the MSB of operand 1
 
-# Testbenches
+## Testbenches
 Each CPU folder has a `CPU_Testbenches` subfolder, and other subfolders may have testbenches for other modules. With the exception of any testbench whose name contains "hello_world" or "exp" (which are their own programs) all testbenches are for debugging purposes. For some testbench `testbench.sv`, it can be run by running module `top_module_testbench`.
