@@ -7,7 +7,7 @@ To use the neural net to classify digits, run `gui.py`. A window will appear, an
 ## Training the Digit Recognizer
 To train the neural net on the MNIST dataset, run `net.py`, and its parameters will be stored in `firstsave`.
 
-## Using the Neural Net Class
+## Using the `NeuralNet` Class
 - **Initialization:** one can import `net.py` and initialize a neural net, with an arbitrary depth and number of neurons per layer, with `net = NeuralNet(layer1_width, layer2_width,...,layern_width)`
 - **Training:** the neural net can be trained with `net.train_example(example)`, where example is a `layer1_width'-wide array of floats, and parameters can be updated according to training results with `net.update_parameters()`
 - **Inference:** the neural net can be run on `example`, with the result stored in `result` with `net.value_map[0] = example; net.forwardpropagate(); result=net.value_map[-1]`
