@@ -13,7 +13,7 @@ def dsigmoid(x):
     except:
         return 2**-8
 
-def dotproduct(a, b): #yes i stole this from here https://stackoverflow.com/questions/32669855/dot-product-of-two-lists-in-python
+def dotproduct(a, b): #this function is taken from https://stackoverflow.com/questions/32669855/dot-product-of-two-lists-in-python
     return sum(i[0] * i[1] for i in zip(a, b, strict=True))
 
 def initrandom():
