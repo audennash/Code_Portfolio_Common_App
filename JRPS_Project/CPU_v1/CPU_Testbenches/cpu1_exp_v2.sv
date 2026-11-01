@@ -120,7 +120,7 @@ module top_module_cpu1_exp_v2 ();
         $finish;
     end
 
-    function automatic integer factorial (input integer n); //Google AI wrote this I hope it works
+	function automatic integer factorial (input integer n); //Google AI wrote this function
         if (n <= 1) begin
             factorial = 1;
         end else begin
