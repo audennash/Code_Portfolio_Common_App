@@ -1,7 +1,9 @@
-# CPU Architecture Overview
+#CPU Usage
+
+## CPU Architecture Overview
 CPU v1 and v2 use the instruction set given in ISA.csv. They use 32-bit operands, have a 32-bit address space, and have 32 registers. They connect to a main memory, which in turn can interface with the user. In each case, the CPU module is named `cpu`.
 
-# CPU Interface
+## CPU Interface
 CPU v1 and v2 have subtly different interfaces due to the dynamic scheduling capabilities of the latter.
 
 **Inputs shared by CPU v1 and CPU v2:**
@@ -23,7 +25,7 @@ CPU v1 and v2 have subtly different interfaces due to the dynamic scheduling cap
    - `first_port` and `first_port+1` are the input port addresses, and `first_port+2` and `first_port+3` are the output port addresses
    - these ports are controlled by the external memory system; this parameter is only used for cache coherency
 
-# CPU Instructions
+## CPU Instructions
 Instructions should be stored in the CPU's main memory, and should not be manually overwritten while the CPU is running. Unless the program counter is explicitly modified by a control instruction (`JUMP`, `BRZ`, or `BRNZ`), it will increase by 1 every time an instruction is issued.
 
 ISA.csv gives one row to each operation, with every column corresponding to a parameter for that instruction. Each column specifies what that parameter does and which bits of the instruction it occupies. Most fields are self-explanatory, but a few clarifications about the spreadsheet are in order:
