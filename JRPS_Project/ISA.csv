@@ -22,5 +22,3 @@ Opcode [31:27],Name,Param 1,Param 2,Param 3,Param 4,Param 5,Param 6,Description
 19,JUMP,Base Reg. [26:22],Addr. Imm. [21:0],-,-,-,-,Sets program counter to Base Reg + Addr Imm
 20,BRZ,Src. Reg. [26:22],Base Reg. [21:17],Addr. Imm. [16:0],-,-,-,"Sets program counter to Base Reg + Addr Imm if source register is 1, does nothing otherwise"
 21,BRNZ,Src. Reg. [26:22],Base Reg. [21:17],Addr. Imm. [16:0],-,-,-,"Sets program countrer to Base Reg + Addr Imm if source register is 0, does nothing otherwise"
-22,BEQ,Addr. Reg [26:22],(default),(default),-,(default),(default),
-23,BLT,Addr. Reg [26:22],(default),(default),(default),(default),(default),
