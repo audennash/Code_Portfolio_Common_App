@@ -1,0 +1,274 @@
+$date
+	Sun Aug 30 21:10:44 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module top_module $end
+$var wire 8 ! out [7:0] $end
+$var reg 1 " arithmetic $end
+$var reg 1 # clk $end
+$var reg 8 $ in [7:0] $end
+$var reg 1 % right $end
+$var reg 3 & shift [2:0] $end
+$scope module test_bs $end
+$var wire 1 " arithmetic $end
+$var wire 8 ' in [7:0] $end
+$var wire 8 ( out [7:0] $end
+$var wire 1 % right $end
+$var wire 3 ) shift [2:0] $end
+$var parameter 32 * sw $end
+$var parameter 32 + width $end
+$scope begin mux_hierarchy[0] $end
+$var wire 1 , l_lower_part [7:7] $end
+$var wire 8 - layer_out [7:0] $end
+$var wire 1 " r_upper_part $end
+$var wire 7 . r_lower_part [7:1] $end
+$var wire 8 / r_layer_out [7:0] $end
+$var wire 8 0 layer_in [7:0] $end
+$var wire 7 1 l_upper_part [6:0] $end
+$var wire 8 2 l_layer_out [7:0] $end
+$var parameter 2 3 i $end
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$scope begin mux_hierarchy[1] $end
+$var wire 2 4 l_lower_part [7:6] $end
+$var wire 8 5 layer_out [7:0] $end
+$var wire 2 6 r_upper_part [1:0] $end
+$var wire 6 7 r_lower_part [7:2] $end
+$var wire 8 8 r_layer_out [7:0] $end
+$var wire 8 9 layer_in [7:0] $end
+$var wire 6 : l_upper_part [5:0] $end
+$var wire 8 ; l_layer_out [7:0] $end
+$var parameter 2 < i $end
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$scope begin mux_hierarchy[2] $end
+$var wire 4 = l_lower_part [7:4] $end
+$var wire 8 > layer_out [7:0] $end
+$var wire 4 ? r_upper_part [3:0] $end
+$var wire 4 @ r_lower_part [7:4] $end
+$var wire 8 A r_layer_out [7:0] $end
+$var wire 8 B layer_in [7:0] $end
+$var wire 4 C l_upper_part [3:0] $end
+$var wire 8 D l_layer_out [7:0] $end
+$var parameter 3 E i $end
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 E
+b1 <
+b0 3
+b1000 +
+b11 *
+$end
+#0
+$dumpvars
+b0 D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 ;
+b0 :
+b0 9
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+0,
+b0 )
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+0#
+0"
+b0 !
+$end
+#5
+1#
+#10
+b10110111 !
+b10110111 (
+b10110111 >
+b1011 =
+b10110111 A
+b1011 @
+b10110111 D
+b111 C
+b10110111 B
+b10110111 5
+b10 4
+b10110111 8
+b101101 7
+b10110111 ;
+b110111 :
+b10110111 9
+b10110111 -
+1,
+b10110111 /
+b1011011 .
+b10110111 2
+b110111 1
+b10110111 0
+b10110111 $
+b10110111 '
+0#
+#15
+1#
+#20
+b1 4
+b10111101 !
+b10111101 (
+b10111101 >
+b1011 =
+b11011 7
+b101111 :
+b10111101 A
+b1011 @
+b10111101 D
+b1101 C
+b1101111 9
+b1101111 -
+b10111101 B
+b10111101 5
+b1101111 2
+b1011011 /
+b10111101 ;
+b11011 8
+b11 &
+b11 )
+0#
+#25
+1#
+#30
+b10 4
+b1011 =
+b101101 7
+b110111 :
+b1011 @
+b111 C
+b10110111 9
+b10110111 -
+b10110111 B
+b10110111 5
+b1111011 !
+b1111011 (
+b1111011 >
+b10110111 2
+b10110111 /
+b10110111 ;
+b10110111 8
+b1111011 D
+b1011 A
+b100 &
+b100 )
+0#
+#35
+1#
+#40
+b11011 7
+b101110 :
+b1011 @
+b1000 C
+b1101110 9
+b1101110 -
+b10111000 B
+b10111000 5
+b10111000 !
+b10111000 (
+b10111000 >
+b1101110 2
+b11011011 /
+b10111000 ;
+b11011011 8
+b10111000 D
+b10111000 A
+0,
+b0 4
+b0 =
+b11 6
+b1111 ?
+1"
+b11 &
+b11 )
+0#
+#45
+1#
+#50
+b1101111 2
+b1101101 ;
+b10110 !
+b10110 (
+b10110 >
+b1011011 /
+b10110 8
+b10110 7
+b11011 :
+b10110 A
+b1 @
+b10110 D
+b110 C
+1,
+b1 4
+b1 =
+b1011011 9
+b1011011 -
+b10110 B
+b10110 5
+b0 6
+b0 ?
+0"
+1%
+0#
+#55
+1#
+#60
+b11110110 !
+b11110110 (
+b11110110 >
+b110110 7
+b11110110 A
+b1111 @
+b11110110 D
+b1101110 2
+b1101100 ;
+b11011011 9
+b11011011 -
+b11110110 B
+b11110110 5
+b11011011 /
+b11110110 8
+0,
+b0 4
+b0 =
+b11 6
+b1111 ?
+1"
+0#
+#65
+1#
+#70
+0#
