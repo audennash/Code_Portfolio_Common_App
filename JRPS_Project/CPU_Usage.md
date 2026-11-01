@@ -19,8 +19,8 @@ CPU v1 and v2 have subtly different interfaces due to the dynamic scheduling cap
 **Inputs, outputs, and parameters unique to CPU v2:**
 - `mem_done` (*input*): tells the CPU that its request to main memory has completed (if asserted, this should be deasserted after one cycle)
 - `cpu_req` (*output*): tells main memory that the CPU is accessing it (this output may be optional depending on the memory configuration)
-- `first_port` (*parameter*): tells the CPU's memory control system which memory addresses are the input and output ports; by default, first_port=252
-   - first_port and first_port+1 are the input port addresses, and first_port+2 and first_port+3 are the output port addresses
+- `first_port` (*parameter*): tells the CPU's memory control system which memory addresses are the input and output ports; by default, `first_port=252`
+   - `first_port` and `first_port+1` are the input port addresses, and `first_port+2` and `first_port+3` are the output port addresses
    - these ports are controlled by the external memory system; this parameter is only used for cache coherency
 
 # CPU Instructions
