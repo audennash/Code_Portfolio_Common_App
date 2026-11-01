@@ -1,5 +1,5 @@
 Opcode [31:27],Name,Param 1,Param 2,Param 3,Param 4,Param 5,Param 6,Description
--,(default),Dest. Reg. [26:22],Src. Reg. 1 [21:17],Src. Reg. 2 [16:12],Signed? [11],Swap P1<->I. [10],Immediate [9:0],-
+-,(default),Dest. Reg. [26:22],Src. Reg. 1 [21:17],Src. Reg. 2 [16:12],Signed? [11],Swap SR1<->I. [10],Immediate [9:0],-
 0,NOP,-,-,-,-,-,-,Does nothing
 1,HALT,-,-,-,-,-,-,Ends the program
 2,EQ,(default),(default),(default),-,(default),(default),"Returns 1 if operands are equal, returns 0 otherwise"
