@@ -1,1 +1,26 @@
-
+Opcode [31:27],Name,Param 1,Param 2,Param 3,Param 4,Param 5,Param 6,Description
+-,(default),Dest. Reg. [26:22],Src. Reg. 1 [21:17],Src. Reg. 2 [16:12],Signed? [11],Swap P1<->I. [10],Immediate [9:0],-
+0,NOP,-,-,-,-,-,-,Does nothing
+1,HALT,-,-,-,-,-,-,Ends the program
+2,EQ,(default),(default),(default),-,(default),(default),"Returns 1 if operands are equal, returns 0 otherwise"
+3,LE,(default),(default),(default),(default),(default),(default),"Returns 1 if operand 1 <= operand 2, returns 0 otherwise"
+4,AND,(default),(default),(default),-,(default),(default),Returns the bitwise AND of operands 1 and 2
+5,OR,(default),(default),(default),-,(default),(default),Returns the bitwise OR of operands 1 and 2
+6,XOR,(default),(default),(default),-,(default),(default),Returns the bitwise XOR of operands 1 and 2
+7,NOT,(default),(default),-,-,(default),(default),Returns the bitwise NOT of operand 1
+8,ADD,(default),(default),(default),,(default),(default),Returns operand 1 + operand 2
+9,SUB,(default),(default),(default),-,(default),(default),Returns operand 1 - operand 2
+10,MUL,(default),(default),(default),(default),(default),(default),Returns operand 1 * operand 2
+11,DIV,(default),(default),(default),(default),(default),(default),Returns operand 1 / operand 2
+12,MOD,(default),(default),(default),-,(default),(default),Returns operand 1 % operand 2
+13,NEG,(default),(default),-,-,(default),(default),Returns -operand 1
+14,SHL,(default),(default),(default),-,(default),(default),Returns operand 1 shifted left by operand 2 bits
+15,SHR,(default),(default),(default),Arithmetic? [11],(default),(default),Returns operand 1 shifted right by operand 2 bits
+16,LI,(default),Imm. [21:0],-,-,-,-,Returns the 22 LSBs of the instruction
+17,LOAD,(default),Addr. Reg. [21:17],Addr. Imm. [16:0],-,-,-,Returns the data stored at memory location Addr Reg + Addr Imm
+18,STORE,Src. Reg. [26:22],Addr. Reg. [21:17],Addr. Imm. [16:0],-,-,-,Stores the data kept in the source register at memory location Addr Reg + Addr Imm
+19,JUMP,Base Reg. [26:22],Addr. Imm. [21:0],-,-,-,-,Sets program counter to Base Reg + Addr Imm
+20,BRZ,Src. Reg. [26:22],Base Reg. [21:17],Addr. Imm. [16:0],-,-,-,"Sets program counter to Base Reg + Addr Imm if source register is 1, does nothing otherwise"
+21,BRNZ,Src. Reg. [26:22],Base Reg. [21:17],Addr. Imm. [16:0],-,-,-,"Sets program countrer to Base Reg + Addr Imm if source register is 0, does nothing otherwise"
+22,BEQ,Addr. Reg [26:22],(default),(default),-,(default),(default),
+23,BLT,Addr. Reg [26:22],(default),(default),(default),(default),(default),
