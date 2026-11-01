@@ -1,4 +1,4 @@
-#CPU Usage
+# CPU Usage
 
 ## CPU Architecture Overview
 CPU v1 and v2 use the instruction set given in ISA.csv. They use 32-bit operands, have a 32-bit address space, and have 32 registers. They connect to a main memory, which in turn can interface with the user. In each case, the CPU module is named `cpu`.
@@ -16,7 +16,7 @@ CPU v1 and v2 have subtly different interfaces due to the dynamic scheduling cap
 - `cpu_data` (*32 bits*): contains the data that main memory should write at cpu_addr, provided cpu_write is asserted
 - `cpu_addr` (*32 bits*): tells main memory which address to access
 - `cpu_write` (*32 bits*): if asserted, signifies to main memory that cpu_addr should be overwritten
-- `halted:` signifies to the user that a HALT instruction has been reached (i.e., a program has terminated)
+- `halted`: signifies to the user that a HALT instruction has been reached (i.e., a program has terminated)
 
 **Inputs, outputs, and parameters unique to CPU v2:**
 - `mem_done` (*input*): tells the CPU that its request to main memory has completed (if asserted, this should be deasserted after one cycle)
